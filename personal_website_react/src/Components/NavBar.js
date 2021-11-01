@@ -6,6 +6,7 @@ import "../Styles/NavBar.css";
 const NavBar = () => {
   const [navBar, setNavBar] = useState(false);
   const [dropDown, setDropDown] = useState(false);
+  const [mobile, setMobile] = useState(false)
 
   //   const navBar = document.querySelector(".nav_container");
   //   const burger = document.querySelector(".burger");
@@ -69,7 +70,7 @@ const NavBar = () => {
         <div className="nav_logo">
           <h3>Adam Tahiri</h3>
         </div>
-        <ul onClick={showOrRemoveDropDown} className={dropDown ? "nav_links_hidden" : "nav_links"}>
+        <ul onClick={showOrRemoveDropDown} className={dropDown || window.innerWidth > 1024 ? "nav_links" : "nav_links_hidden"}>
           <li>
             <NavLink className="links" to="/">
               Home
@@ -95,7 +96,7 @@ const NavBar = () => {
           //   onClick={(e) => handleBurger(e)}
           //   className={`burger ${dropDown ? "toggle" : ""}`}
           onClick={handleDropDown}
-          className={dropDown ? "burger" : "burger toggle"}
+          className={dropDown ? "burger toggle" : "burger"}
         >
           <div className="line1"></div>
           <div className="line2"></div>

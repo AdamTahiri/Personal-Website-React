@@ -61,29 +61,17 @@
   backdrop-filter: blur(8px);
 }
 
-.proj_info_wrapper h5 {
-  font-size: 2.5em;
-}
+/* .proj_info_wrapper h5 {
+  font-size: 2em;
+} */
 
-.proj1 .proj_info_wrapper h3 {
-  font-size: 1.2em;
+.proj1 .proj_info_wrapper p {
+  font-size: 1em;
   text-shadow: 0px 2px 2px rgb(245, 240, 233);
   color: black;
 }
 
-.proj2 .proj_info_wrapper h3 {
-  font-size: 1.2em;
-  text-shadow: 0px 2px 2px rgb(240, 146, 15);
-  color: rgb(240, 238, 234);
-}
-
-.proj3 .proj_info_wrapper h3 {
-  font-size: 1.2em;
-  text-shadow: 0px 2px 2px rgb(240, 146, 15);
-  color: rgb(240, 238, 234);
-}
-
-.proj4 .proj_info_wrapper h3 {
+.proj .proj_info_wrapper h3 {
   font-size: 1.2em;
   text-shadow: 0px 2px 2px rgb(240, 146, 15);
   color: rgb(240, 238, 234);
@@ -156,23 +144,23 @@
     backdrop-filter: blur(8px);
   }
 
-  .proj_info_wrapper h5 {
+  .proj_info_wrapper h3 {
     font-size: 2em;
   }
 
-  .proj1 .proj_info_wrapper h3 {
-    font-size: 1em;
-    text-shadow: 0px 2px 2px rgb(245, 240, 233);
-    color: black;
-  }
-
-  .proj2 .proj_info_wrapper h3 {
+  
+  .proj .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
   }
-
-  .proj3 .proj_info_wrapper h3 {
+  
+  .proj1 .proj_info_wrapper p {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(245, 240, 233);
+    color: black;
+  }
+  /* .proj3 .proj_info_wrapper h3 {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
@@ -182,7 +170,7 @@
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
-  }
+  } */
 
   .link_proj {
     padding-top: 20px;
@@ -263,29 +251,29 @@
     backdrop-filter: blur(8px);
   }
 
-  .proj_info_wrapper h5 {
+  .proj_info_wrapper h3 {
     font-size: 2em;
   }
 
-  .proj1 .proj_info_wrapper h3 {
+  .proj1 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(245, 240, 233);
     color: black;
   }
 
-  .proj2 .proj_info_wrapper h3 {
+  .proj2 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
   }
 
-  .proj3 .proj_info_wrapper h3 {
+  .proj3 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
   }
 
-  .proj4 .proj_info_wrapper h3 {
+  .proj4 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
@@ -359,29 +347,29 @@
     backdrop-filter: blur(8px);
   }
 
-  .proj_info_wrapper h5 {
+  .proj_info_wrapper h3 {
     font-size: 2em;
   }
 
-  .proj1 .proj_info_wrapper h3 {
+  .proj1 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(245, 240, 233);
     color: black;
   }
 
-  .proj2 .proj_info_wrapper h3 {
+  .proj2 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
   }
 
-  .proj3 .proj_info_wrapper h3 {
+  .proj3 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
   }
 
-  .proj4 .proj_info_wrapper h3 {
+  .proj4 .proj_info_wrapper p {
     font-size: 1em;
     text-shadow: 0px 2px 2px rgb(240, 146, 15);
     color: rgb(240, 238, 234);
