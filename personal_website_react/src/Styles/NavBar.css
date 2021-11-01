@@ -1,0 +1,221 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: khodijah;
+  src: url("../Styles/Fonts/khodijah/Khodijah\ Free.ttf");
+}
+
+@font-face {
+  font-family: ahlan;
+  src: url("../Styles/Fonts/khodijah/aAhlanWasahlan.ttf");
+}
+
+@font-face {
+  font-family: bismillah;
+  src: url("../Styles/Fonts/khodijah/Bismillah\ Script.ttf");
+}
+
+.nav_container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(7px);
+  z-index: 100;
+}
+
+.nav_on_scroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background: rgb(245, 237, 227);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(7px);
+}
+
+.nav_on_scroll .nav_links {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.nav_logo {
+  color: rgb(82, 125, 189);
+  font-family: khodijah;
+  /* font-style: italic; */
+  font-size: 30px;
+  padding-left: 3%;
+  text-transform: uppercase;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.nav_links {
+  position: relative;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: ahlan;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 8px;
+  width: 60%;
+  color: rgb(233, 210, 196);
+}
+
+.links {
+  position: relative;
+}
+
+.links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(197, 183, 183);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.burger {
+  display: none;
+  padding-right: 5%;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(82, 125, 189);
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    /* transform: translate(50px); */
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-4px, -6px);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav_on_scroll .nav_links {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    filter: drop-shadow(0px 4px 4px);
+  }
+
+  .nav_logo {
+    display: flex;
+    align-items: center;
+    color: rgb(82, 125, 189);
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 5%;
+    text-transform: uppercase;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+  .nav_on_scroll {
+    height: 7vh;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+
+  .nav_links_hidden {
+    display: none;
+  }
+
+  .nav_links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    top: 7vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    filter: drop-shadow(0px 4px 4px);
+    /* transform: translate(100%); */
+    /* transition: transform .4s ease-in; */
+    /* transform: translate(0, -120%); 
+    /* transform from top to bottom but overlaps nav */
+  }
+
+  /* .links {
+    opacity: 0;
+  }
+
+  .links {
+    font-size: 30px;
+    text-shadow: 0px 3px 3px rgb(206, 138, 50);
+    padding-bottom: 10%;
+  } */
+
+  .burger {
+    display: block;
+    padding-right: 5%;
+  }
+
+  .links:hover {
+    font-weight: bolder;
+    font-size: 30px;
+    transition: 0.1s ease-in;
+  }
+
+  .nav_active {
+    transform: translate(0%);
+    /* backdrop-filter: blur(4px); */
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+} */

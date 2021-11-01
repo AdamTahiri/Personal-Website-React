@@ -1,0 +1,117 @@
+@font-face {
+  font-family: ahlan;
+  src: url("../Styles/Fonts/khodijah/aAhlanWasahlan.ttf");
+}
+
+.home_container {
+  background: url("https://i.postimg.cc/XNmY0kM0/raul-cacho-oses-r-Ws-H0jn-YSo-M-unsplash.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.text_container {
+  margin-right: 50%;
+  font-family: ahlan;
+  color: rgb(165, 123, 99);
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  /* justify-items: center; */
+  align-content: center;
+  /* align-items: center; */
+  /* padding-top: 50%; */
+}
+
+.text_container h1 {
+  font-size: 10em;
+  font-family: ahlan;
+}
+
+.text_container h2 {
+  font-family: ahlan;
+  font-size: 4em;
+}
+
+/* .home_img {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 30%;
+} */
+
+/* .home_img img{
+  border-radius: 10%;
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  box-shadow: 0px 3px 10px rgb(148, 132, 111);
+} */
+
+@media screen and (max-height: 740px) {
+  .text_container {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    font-size: 0;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .text_container {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    font-size: 0;
+  }
+
+  .home_img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+  }
+
+  .home_img img{
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px rgb(148, 132, 111);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .text_container {
+        margin-right: 60%;
+        font-family: ahlan;
+        color: rgb(165, 123, 99);
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .text_container h1 {
+        font-size: 9em;
+        font-family: ahlan;
+      }
+      
+      .text_container h2 {
+        font-family: ahlan;
+        font-size: 3em;
+      }
+}

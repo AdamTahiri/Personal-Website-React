@@ -1,0 +1,344 @@
+.about_me_page {
+  background: url("https://i.postimg.cc/wMKkqjwn/victoriano-izquierdo-Hoev-DVvx-Inw-unsplash.jpg")
+    no-repeat;
+  background-size: cover;
+  height: 120vh;
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.about_me_h1 {
+  color: black;
+  font-size: 4em;
+  font-weight: bold;
+  padding-top: 7%;
+  text-shadow: 0px 2px 0px black;
+  text-align: center;
+}
+
+.about_me_container {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5%;
+  font-family: fantasy;
+  height: 70vh;
+}
+
+.my_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my_image {
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+  box-shadow: 0px 10px 10px rgb(206, 138, 50);
+  padding-top: 10px;
+}
+
+.my_info h1,
+h5,
+p {
+  text-align: center;
+  text-shadow: 0px 2px 2px rgb(206, 138, 50);
+  color: whitesmoke;
+}
+
+.my_info h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-top: 2em;
+}
+
+.my_info h5 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.my_info p {
+  font-size: 22px;
+  line-height: 35px;
+  padding: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 250ms;
+  padding-top: 20px;
+}
+
+.social li {
+  font-size: 40px;
+  padding: 10px;
+}
+
+.social li:hover {
+  color: rgb(206, 138, 50);
+  cursor: pointer;
+}
+
+@media screen and (max-height: 640px) {
+  .about_me_page {
+    height: 170vh;
+  }
+  .about_me_container {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about_me_h1 {
+    color: black;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 20%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .about_me_container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5%;
+    height: 90vh;
+    font-family: fantasy;
+  }
+
+  .my_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my_image {
+    border-radius: 50%;
+    width: 8.5em;
+    height: 8.5em;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px rgb(206, 138, 50);
+    padding-top: 10px;
+  }
+
+  .my_info h1,
+  h5,
+  p {
+    text-align: center;
+    text-shadow: 0px 2px 2px rgb(206, 138, 50);
+    color: whitesmoke;
+  }
+
+  .my_info h1 {
+    font-size: 26px;
+    letter-spacing: 3px;
+    padding-top: 10%;
+  }
+
+  .my_info h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .my_info p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+  }
+
+  .social li {
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .social li:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .about_me_h1 {
+    color: black;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 20%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .about_me_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5%;
+    font-family: fantasy;
+    height: 95vh;
+  }
+
+  .my_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my_image {
+    border-radius: 50%;
+    width: 9em;
+    height: 9em;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px rgb(206, 138, 50);
+    padding-top: 10px;
+  }
+
+  .my_info h1,
+  h5,
+  p {
+    text-align: center;
+    text-shadow: 0px 2px 2px rgb(206, 138, 50);
+    color: whitesmoke;
+  }
+
+  .my_info h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-top: 10%;
+  }
+
+  .my_info h5 {
+    font-size: 23px;
+    padding-bottom: 20px;
+  }
+
+  .my_info p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+  }
+
+  .social li {
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .social li:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about_me_h1 {
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 20%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .about_me_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5%;
+    font-family: fantasy;
+    height: 80vh;
+  }
+
+  .my_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my_image {
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
+    object-fit: cover;
+    box-shadow: 0px 10px 10px rgb(206, 138, 50);
+    padding-top: 10px;
+  }
+
+  .my_info h1,
+  h5,
+  p {
+    text-align: center;
+    text-shadow: 0px 2px 2px rgb(206, 138, 50);
+    color: whitesmoke;
+  }
+
+  .my_info h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 10%;
+  }
+
+  .my_info h5 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .my_info p {
+    font-size: 22px;
+    line-height: 35px;
+    padding: 10px;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 250ms;
+    padding-top: 20px;
+  }
+
+  .social li {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .social li:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+  }
+}

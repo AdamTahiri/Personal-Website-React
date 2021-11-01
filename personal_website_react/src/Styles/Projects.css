@@ -1,0 +1,402 @@
+.projects_page {
+  background: url("https://i.postimg.cc/3R6tBYj9/parker-hilton-n-Lx-UP6g-g-VE-unsplash.jpg")
+    no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.projects_h1 {
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    padding: 6%;
+    padding-top: 7%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+}
+
+.projects_container {
+  /* padding-top: 10%; */
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  gap: 3em;
+}
+
+.projects_container .proj {
+  position: relative;
+  height: 100%;
+  /* margin: 10px; */
+}
+
+.projects_container .proj img {
+  display: flex;
+  box-shadow: 0px 20px 20px;
+  height: 100%;
+}
+
+.proj_info_wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  font-family: fantasy;
+}
+
+.proj_info_wrapper:hover {
+  opacity: 1;
+  backdrop-filter: blur(8px);
+}
+
+.proj_info_wrapper h5 {
+  font-size: 2.5em;
+}
+
+.proj1 .proj_info_wrapper h3 {
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgb(245, 240, 233);
+  color: black;
+}
+
+.proj2 .proj_info_wrapper h3 {
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgb(240, 146, 15);
+  color: rgb(240, 238, 234);
+}
+
+.proj3 .proj_info_wrapper h3 {
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgb(240, 146, 15);
+  color: rgb(240, 238, 234);
+}
+
+.proj4 .proj_info_wrapper h3 {
+  font-size: 1.2em;
+  text-shadow: 0px 2px 2px rgb(240, 146, 15);
+  color: rgb(240, 238, 234);
+}
+
+.link_proj {
+  padding-top: 20px;
+  font-size: 1.8em;
+  text-shadow: 0px 2px 2px rgb(10, 6, 1);
+  color: whitesmoke;
+}
+
+.link_proj:hover {
+  color: rgb(206, 138, 50);
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 376px) {
+    .projects_page {
+    height: 160vh;
+  }
+
+  .projects_h1 {
+    color: black;
+    font-size: 2.8em;
+    font-weight: bold;
+    padding-top: 20%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .projects_container {
+    padding-top: 2px;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    gap: 2.5em;
+  }
+
+  .projects_container .proj {
+    position: relative;
+    /* margin: 10px; */
+  }
+
+  .projects_container .proj img {
+    display: flex;
+    box-shadow: 0px 20px 20px;
+  }
+
+  .proj_info_wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    font-family: fantasy;
+  }
+
+  .proj_info_wrapper:hover {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+
+  .proj_info_wrapper h5 {
+    font-size: 2em;
+  }
+
+  .proj1 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(245, 240, 233);
+    color: black;
+  }
+
+  .proj2 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj3 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj4 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .link_proj {
+    padding-top: 20px;
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(10, 6, 1);
+    color: rgb(212, 150, 33);
+  }
+
+  .link_proj:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-height: 667px) {
+    .projects_page {
+        height: 180vh;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .projects_page {
+        height: 190vh;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .projects_page {
+    height: 180vh;
+  }
+
+  .projects_h1 {
+    color: black;
+    font-size: 2.8em;
+    font-weight: bold;
+    padding-top: 20%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .projects_container {
+    padding-top: 2px;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    gap: 2.5em;
+  }
+
+  .projects_container .proj {
+    position: relative;
+    /* margin: 10px; */
+  }
+
+  .projects_container .proj img {
+    display: flex;
+    box-shadow: 0px 20px 20px;
+  }
+
+  .proj_info_wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    font-family: fantasy;
+  }
+
+  .proj_info_wrapper:hover {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+
+  .proj_info_wrapper h5 {
+    font-size: 2em;
+  }
+
+  .proj1 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(245, 240, 233);
+    color: black;
+  }
+
+  .proj2 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj3 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj4 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .link_proj {
+    padding-top: 20px;
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(10, 6, 1);
+    color: rgb(212, 150, 33);
+  }
+
+  .link_proj:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .projects_page {
+    height: 200vh;
+  }
+
+  .projects_h1 {
+    color: black;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 15%;
+    text-shadow: 0px 2px 0px black;
+    text-align: center;
+  }
+
+  .projects_container {
+    padding-top: 5%;
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    gap: 3em;
+  }
+
+  .projects_container .proj {
+    position: relative;
+    width: 84%;
+    /* margin: 10px; */
+  }
+
+  .projects_container .proj img {
+    display: flex;
+    box-shadow: 0px 20px 20px;
+  }
+
+  .proj_info_wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    font-family: fantasy;
+  }
+
+  .proj_info_wrapper:hover {
+    opacity: 1;
+    backdrop-filter: blur(8px);
+  }
+
+  .proj_info_wrapper h5 {
+    font-size: 2em;
+  }
+
+  .proj1 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(245, 240, 233);
+    color: black;
+  }
+
+  .proj2 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj3 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .proj4 .proj_info_wrapper h3 {
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(240, 146, 15);
+    color: rgb(240, 238, 234);
+  }
+
+  .link_proj {
+    padding-top: 20px;
+    font-size: 1em;
+    text-shadow: 0px 2px 2px rgb(10, 6, 1);
+    color: rgb(212, 150, 33);
+  }
+
+  .link_proj:hover {
+    color: rgb(206, 138, 50);
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+}
